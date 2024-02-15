@@ -107,7 +107,7 @@ $(document).ready(function() {
 
   $('#filter-tasks').on('click', '.filter-btn', function() {
     var status = $(this).data('status');
-    var filteredTasks;
+    var filteredTasks = [];
 
     if (status === 'all') {
       filteredTasks = tasks;
@@ -123,7 +123,6 @@ $(document).ready(function() {
 
     displayTasks(filteredTasks);
   });
-
 
 
 });
